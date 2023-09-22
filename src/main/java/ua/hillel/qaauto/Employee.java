@@ -1,11 +1,13 @@
 package ua.hillel.qaauto;
 
 public class Employee {
+    //instance variables
     String name;
     String jobTitle;
     int experience;
     double salary;
 
+    // ------ Constructors
     Employee() {
         name = "John Doe";
         jobTitle = "Intern";
@@ -34,6 +36,10 @@ public class Employee {
         experience = employee.experience;
     }
 
+    // ------
+
+
+    // ------ Methods, methods overloading
     void calculateSalary() {
         System.out.println("Employee " + name + " has updated salary " + (salary + salary * experience / 100));
     }
@@ -65,5 +71,6 @@ public class Employee {
         else
             return false;
     }
+    // ------
 
 }
